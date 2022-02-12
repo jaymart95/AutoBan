@@ -35,7 +35,7 @@ python launcher.py
 
 ## Version History
 * 0.2
-   * Converted to DB instead of .json file. 
+   * Converted to SQLite DB instead of .json file. 
    * Added ability to blacklist names
 * 0.1
     * Initial Release

@@ -32,6 +32,7 @@ python launcher.py
 /unban - unban a user by their ID *currently not working.
 ```
 ### Todo
+* Auto add IDs once member joins discord
 * Convert list to a database
 * Add name blacklist
 

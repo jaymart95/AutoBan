@@ -1,5 +1,7 @@
 # AutoBan
 
+A discord bot that autobans blacklisted users.
+
 ## Description
 
 A discord bot that autobans blacklisted users.

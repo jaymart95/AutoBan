@@ -1122,3 +1122,1352 @@ TypeError: '_io.TextIOWrapper' object is not subscriptable
 [2022-02-12 04:59:57,995] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
 [2022-02-12 04:59:58,042] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
 [2022-02-12 04:59:58,043] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 11:25:26,051] INFO [root.run:68] Running setup...
+[2022-02-12 11:25:45,089] INFO [root.run:68] Running setup...
+[2022-02-12 11:25:45,111] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 11:25:45,112] INFO [root.setup:58] setup complete
+[2022-02-12 11:25:45,112] INFO [root.run:74] running bot....
+[2022-02-12 11:25:45,112] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 11:25:45,557] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 11:25:45,741] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-gfgh",{"micros":131546,"calls":["discord-sessions-green-prd-2-138",{"micros":130453,"calls":["start_session",{"micros":89948,"calls":["api-prd-main-j15g",{"micros":79699,"calls":["get_user",{"micros":9837},"add_authorized_ip",{"micros":9670},"get_guilds",{"micros":6243},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 4fd39e5a74fa577412e3ffa0d089f4a0).
+[2022-02-12 11:25:45,743] INFO [root.on_connect:84] bot connected
+[2022-02-12 11:25:47,753] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 11:25:47,753] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 11:25:47,754] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=OperationalError('table users has no column named UserUD')>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 125, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 61, in update_db
+    db.multiexec('INSERT OR IGNORE INTO users (UserUD) VALUES (?)',
+  File "e:\Github\AutoBan\lib\db\db.py", line 69, in multiexec
+    cur.executemany(command, valueset)
+sqlite3.OperationalError: table users has no column named UserUD
+[2022-02-12 11:25:47,757] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 11:26:00,000] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:27:00 EST)" (scheduled at 2022-02-12 11:26:00-05:00)
+[2022-02-12 11:26:00,001] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:27:00 EST)" executed successfully
+[2022-02-12 11:26:04,956] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 11:26:04,956] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 11:26:04,956] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 11:26:05,002] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 11:26:05,002] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 11:26:30,044] INFO [root.run:68] Running setup...
+[2022-02-12 11:26:30,046] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 11:26:30,047] INFO [root.setup:58] setup complete
+[2022-02-12 11:26:30,047] INFO [root.run:74] running bot....
+[2022-02-12 11:26:30,047] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 11:26:30,466] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 11:26:30,640] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-v07b",{"micros":124852,"calls":["discord-sessions-green-prd-2-96",{"micros":123769,"calls":["start_session",{"micros":75106,"calls":["api-prd-main-zqvq",{"micros":71765,"calls":["get_user",{"micros":3601},"add_authorized_ip",{"micros":2662},"get_guilds",{"micros":12581},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":17269,"calls":[]}]}]}] (Session ID: 814100fd386ffd1eb7c6affa55a867c9).
+[2022-02-12 11:26:30,642] INFO [root.on_connect:84] bot connected
+[2022-02-12 11:26:32,671] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 11:26:32,671] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 11:26:32,672] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=OperationalError('table users has no column named UserUD')>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 125, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 61, in update_db
+    db.multiexec('INSERT OR IGNORE INTO users (UserUD) VALUES (?)',
+  File "e:\Github\AutoBan\lib\db\db.py", line 69, in multiexec
+    cur.executemany(command, valueset)
+sqlite3.OperationalError: table users has no column named UserUD
+[2022-02-12 11:26:32,674] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 11:27:00,013] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:28:00 EST)" (scheduled at 2022-02-12 11:27:00-05:00)
+[2022-02-12 11:27:00,014] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:28:00 EST)" executed successfully
+[2022-02-12 11:28:00,005] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:29:00 EST)" (scheduled at 2022-02-12 11:28:00-05:00)
+[2022-02-12 11:28:00,006] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:29:00 EST)" executed successfully
+[2022-02-12 11:29:00,014] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:30:00 EST)" (scheduled at 2022-02-12 11:29:00-05:00)
+[2022-02-12 11:29:00,015] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:30:00 EST)" executed successfully
+[2022-02-12 11:30:00,029] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:31:00 EST)" (scheduled at 2022-02-12 11:30:00-05:00)
+[2022-02-12 11:30:00,030] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:31:00 EST)" executed successfully
+[2022-02-12 11:31:00,010] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:32:00 EST)" (scheduled at 2022-02-12 11:31:00-05:00)
+[2022-02-12 11:31:00,011] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:32:00 EST)" executed successfully
+[2022-02-12 11:32:00,001] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:33:00 EST)" (scheduled at 2022-02-12 11:32:00-05:00)
+[2022-02-12 11:32:00,002] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:33:00 EST)" executed successfully
+[2022-02-12 11:33:00,018] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:34:00 EST)" (scheduled at 2022-02-12 11:33:00-05:00)
+[2022-02-12 11:33:00,019] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:34:00 EST)" executed successfully
+[2022-02-12 11:33:16,212] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 11:33:16,212] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 11:33:16,212] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 11:33:16,259] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 11:33:16,259] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 11:41:53,373] INFO [root.run:69] Running setup...
+[2022-02-12 11:41:53,394] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 11:41:53,394] INFO [root.setup:58] setup complete
+[2022-02-12 11:41:53,394] INFO [root.run:75] running bot....
+[2022-02-12 11:41:53,394] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 11:41:53,841] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 11:41:54,039] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-qf84",{"micros":148155,"calls":["discord-sessions-green-prd-2-150",{"micros":147040,"calls":["start_session",{"micros":135823,"calls":["api-prd-main-7p5h",{"micros":122979,"calls":["get_user",{"micros":6436},"add_authorized_ip",{"micros":49694},"get_guilds",{"micros":22208},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":9,"calls":[]},"presence_connect",{"micros":9140,"calls":[]}]}]}] (Session ID: bf01806241b1f9bc5f745b82da3b3460).
+[2022-02-12 11:41:54,041] INFO [root.on_connect:85] bot connected
+[2022-02-12 11:41:56,044] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 11:41:56,044] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 11:41:56,045] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=TypeError('multiexec() takes 2 positional arguments but 3 were given')>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 126, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 61, in update_db
+    db.multiexec('INSERT OR IGNORE INTO users VALUES (?, ?)',
+TypeError: multiexec() takes 2 positional arguments but 3 were given
+[2022-02-12 11:41:56,048] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 11:42:00,005] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:43:00 EST)" (scheduled at 2022-02-12 11:42:00-05:00)
+[2022-02-12 11:42:00,006] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:43:00 EST)" executed successfully
+[2022-02-12 11:43:00,011] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:44:00 EST)" (scheduled at 2022-02-12 11:43:00-05:00)
+[2022-02-12 11:43:00,012] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:44:00 EST)" executed successfully
+[2022-02-12 11:43:24,761] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 11:43:24,762] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 11:43:24,762] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 11:43:24,812] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 11:43:24,813] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 11:43:31,838] INFO [root.run:71] Running setup...
+[2022-02-12 11:43:31,840] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 11:43:31,840] INFO [root.setup:58] setup complete
+[2022-02-12 11:43:31,840] INFO [root.run:77] running bot....
+[2022-02-12 11:43:31,841] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 11:43:32,201] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 11:43:32,314] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-qn3x",{"micros":65334,"calls":["discord-sessions-green-prd-2-5",{"micros":59649,"calls":["start_session",{"micros":35487,"calls":["api-prd-main-mhk0",{"micros":31490,"calls":["get_user",{"micros":5012},"add_authorized_ip",{"micros":1718},"get_guilds",{"micros":4156},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":12472,"calls":[]}]}]}] (Session ID: 38502fb97f7b2d32624552e54010c1b0).
+[2022-02-12 11:43:32,315] INFO [root.on_connect:87] bot connected
+[2022-02-12 11:43:34,335] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 11:43:34,336] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 11:43:34,336] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=OperationalError('table users has 3 columns but 1 values were supplied')>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 128, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 61, in update_db
+    db.multiexec('INSERT OR IGNORE INTO users VALUES (?)',
+  File "e:\Github\AutoBan\lib\db\db.py", line 69, in multiexec
+    cur.executemany(command, valueset)
+sqlite3.OperationalError: table users has 3 columns but 1 values were supplied
+[2022-02-12 11:43:34,339] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 11:44:00,010] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:45:00 EST)" (scheduled at 2022-02-12 11:44:00-05:00)
+[2022-02-12 11:44:00,011] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:45:00 EST)" executed successfully
+[2022-02-12 11:44:10,613] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 11:44:10,614] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 11:44:10,614] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 11:44:10,662] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 11:44:10,662] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 11:44:17,538] INFO [root.run:71] Running setup...
+[2022-02-12 11:44:17,540] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 11:44:17,540] INFO [root.setup:58] setup complete
+[2022-02-12 11:44:17,540] INFO [root.run:77] running bot....
+[2022-02-12 11:44:17,540] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 11:44:17,931] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 11:44:18,051] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-hnsh",{"micros":70300,"calls":["discord-sessions-green-prd-2-158",{"micros":65917,"calls":["start_session",{"micros":37755,"calls":["api-prd-main-nf4h",{"micros":31675,"calls":["get_user",{"micros":5840},"add_authorized_ip",{"micros":1654},"get_guilds",{"micros":5309},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":22299,"calls":[]}]}]}] (Session ID: 53f56dc6ea39a45ef5a104db0f1d10cc).
+[2022-02-12 11:44:18,052] INFO [root.on_connect:87] bot connected
+[2022-02-12 11:44:20,073] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 11:44:20,074] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 11:44:20,075] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=AttributeError("'Guild' object has no attribute 'guild'")>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 128, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 64, in update_db
+    db.multiexec('INSERT OR IGNORE INTO users (GuildID) VALUES (?)',
+  File "e:\Github\AutoBan\lib\db\db.py", line 69, in multiexec
+    cur.executemany(command, valueset)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 65, in <genexpr>
+    ((member.guild.id,) for member in self.guilds))
+AttributeError: 'Guild' object has no attribute 'guild'
+[2022-02-12 11:44:20,078] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 11:45:00,008] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:46:00 EST)" (scheduled at 2022-02-12 11:45:00-05:00)
+[2022-02-12 11:45:00,009] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:46:00 EST)" executed successfully
+[2022-02-12 11:46:00,013] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:47:00 EST)" (scheduled at 2022-02-12 11:46:00-05:00)
+[2022-02-12 11:46:00,014] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:47:00 EST)" executed successfully
+[2022-02-12 11:47:00,004] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:48:00 EST)" (scheduled at 2022-02-12 11:47:00-05:00)
+[2022-02-12 11:47:00,004] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:48:00 EST)" executed successfully
+[2022-02-12 11:48:00,021] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:49:00 EST)" (scheduled at 2022-02-12 11:48:00-05:00)
+[2022-02-12 11:48:00,022] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:49:00 EST)" executed successfully
+[2022-02-12 11:49:00,002] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:50:00 EST)" (scheduled at 2022-02-12 11:49:00-05:00)
+[2022-02-12 11:49:00,003] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:50:00 EST)" executed successfully
+[2022-02-12 11:49:01,495] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 11:49:01,496] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 11:49:01,496] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 11:49:01,541] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 11:49:01,542] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 11:49:10,017] INFO [root.run:68] Running setup...
+[2022-02-12 11:49:10,039] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 11:49:10,040] INFO [root.setup:58] setup complete
+[2022-02-12 11:49:10,040] INFO [root.run:74] running bot....
+[2022-02-12 11:49:10,040] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 11:49:10,446] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 11:49:10,535] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-r8wr",{"micros":39822,"calls":["discord-sessions-green-prd-2-96",{"micros":33500,"calls":["start_session",{"micros":32354,"calls":["api-prd-main-7gl9",{"micros":28309,"calls":["get_user",{"micros":4027},"add_authorized_ip",{"micros":1449},"get_guilds",{"micros":3804},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":381,"calls":[]}]}]}] (Session ID: 48404f8df246d703e0ea467a76f5cb61).
+[2022-02-12 11:49:10,536] INFO [root.on_connect:84] bot connected
+[2022-02-12 11:49:12,552] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 11:49:12,553] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 11:49:12,553] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=TypeError('multiexec() takes 2 positional arguments but 3 were given')>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 125, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 61, in update_db
+    db.multiexec('INSERT OR IGNORE INTO users (UserID), (GuildID) VALUES (?, ?)',
+TypeError: multiexec() takes 2 positional arguments but 3 were given
+[2022-02-12 11:49:12,556] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 11:49:44,366] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 11:49:44,366] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 11:49:44,367] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 11:49:44,417] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 11:49:44,417] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 11:49:52,448] INFO [root.run:68] Running setup...
+[2022-02-12 11:49:52,450] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 11:49:52,450] INFO [root.setup:58] setup complete
+[2022-02-12 11:49:52,451] INFO [root.run:74] running bot....
+[2022-02-12 11:49:52,451] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 11:49:52,836] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 11:49:52,930] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-6mgz",{"micros":46711,"calls":["discord-sessions-green-prd-2-128",{"micros":45500,"calls":["start_session",{"micros":33010,"calls":["api-prd-main-2wbg",{"micros":29476,"calls":["get_user",{"micros":3916},"add_authorized_ip",{"micros":1386},"get_guilds",{"micros":5428},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":6089,"calls":[]}]}]}] (Session ID: 78b77fc9f87aa2143bc05a5985d750a5).
+[2022-02-12 11:49:52,931] INFO [root.on_connect:84] bot connected
+[2022-02-12 11:49:54,930] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 11:49:54,931] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 11:49:54,931] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=OperationalError('near ",": syntax error')>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 125, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 61, in update_db
+    db.execute('INSERT OR IGNORE INTO users (UserID), (GuildID) VALUES (?, ?)',
+  File "e:\Github\AutoBan\lib\db\db.py", line 65, in execute
+    cur.execute(command, tuple(values))
+sqlite3.OperationalError: near ",": syntax error
+[2022-02-12 11:49:54,934] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 11:50:00,015] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:51:00 EST)" (scheduled at 2022-02-12 11:50:00-05:00)
+[2022-02-12 11:50:00,016] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:51:00 EST)" executed successfully
+[2022-02-12 11:51:00,013] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:52:00 EST)" (scheduled at 2022-02-12 11:51:00-05:00)
+[2022-02-12 11:51:00,014] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:52:00 EST)" executed successfully
+[2022-02-12 11:51:06,568] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 11:51:06,568] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 11:51:06,568] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 11:51:06,614] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 11:51:06,615] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 11:51:11,329] INFO [root.run:68] Running setup...
+[2022-02-12 11:51:11,331] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 11:51:11,331] INFO [root.setup:58] setup complete
+[2022-02-12 11:51:11,332] INFO [root.run:74] running bot....
+[2022-02-12 11:51:11,332] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 11:51:11,705] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 11:51:11,813] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-dgbm",{"micros":60704,"calls":["discord-sessions-green-prd-2-62",{"micros":56926,"calls":["start_session",{"micros":35900,"calls":["api-prd-main-s611",{"micros":31650,"calls":["get_user",{"micros":5002},"add_authorized_ip",{"micros":1567},"get_guilds",{"micros":3536},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":16428,"calls":[]}]}]}] (Session ID: 8c979ea645feb555e76cb2e8d3470e14).
+[2022-02-12 11:51:11,814] INFO [root.on_connect:84] bot connected
+[2022-02-12 11:51:13,831] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 11:51:13,831] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 11:51:13,832] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=TypeError('multiexec() takes 2 positional arguments but 3 were given')>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 125, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 61, in update_db
+    db.multiexec('INSERT OR IGNORE INTO users (UserID), (GuildID) VALUES (?, ?)',
+TypeError: multiexec() takes 2 positional arguments but 3 were given
+[2022-02-12 11:51:13,834] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 11:52:00,008] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:53:00 EST)" (scheduled at 2022-02-12 11:52:00-05:00)
+[2022-02-12 11:52:00,009] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:53:00 EST)" executed successfully
+[2022-02-12 11:52:03,412] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 11:52:03,412] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 11:52:03,413] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 11:52:03,456] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 11:52:03,456] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 11:55:47,370] INFO [root.run:68] Running setup...
+[2022-02-12 11:55:47,372] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 11:55:47,372] INFO [root.setup:58] setup complete
+[2022-02-12 11:55:47,372] INFO [root.run:74] running bot....
+[2022-02-12 11:55:47,372] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 11:55:47,789] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 11:55:48,434] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-xmx0",{"micros":596669,"calls":["discord-sessions-green-prd-2-80",{"micros":594080,"calls":["start_session",{"micros":574272,"calls":["api-prd-main-wcrf",{"micros":570158,"calls":["get_user",{"micros":4812},"add_authorized_ip",{"micros":1259},"get_guilds",{"micros":513879},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":5859,"calls":[]}]}]}] (Session ID: 7f127db9619b28319416dc1409020d1d).
+[2022-02-12 11:55:48,435] INFO [root.on_connect:84] bot connected
+[2022-02-12 11:55:50,433] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 11:55:50,434] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 11:55:50,434] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=TypeError('multiexec() takes 2 positional arguments but 3 were given')>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 125, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 61, in update_db
+    db.multiexec('INSERT OR IGNORE INTO users (UserID, GuildID) VALUES (?, ?)',
+TypeError: multiexec() takes 2 positional arguments but 3 were given
+[2022-02-12 11:55:50,436] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 11:56:00,026] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:57:00 EST)" (scheduled at 2022-02-12 11:56:00-05:00)
+[2022-02-12 11:56:00,027] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:57:00 EST)" executed successfully
+[2022-02-12 11:57:00,013] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:58:00 EST)" (scheduled at 2022-02-12 11:57:00-05:00)
+[2022-02-12 11:57:00,014] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:58:00 EST)" executed successfully
+[2022-02-12 11:58:00,003] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:59:00 EST)" (scheduled at 2022-02-12 11:58:00-05:00)
+[2022-02-12 11:58:00,004] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 11:59:00 EST)" executed successfully
+[2022-02-12 11:59:00,009] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:00:00 EST)" (scheduled at 2022-02-12 11:59:00-05:00)
+[2022-02-12 11:59:00,010] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:00:00 EST)" executed successfully
+[2022-02-12 12:00:00,014] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:01:00 EST)" (scheduled at 2022-02-12 12:00:00-05:00)
+[2022-02-12 12:00:00,015] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:01:00 EST)" executed successfully
+[2022-02-12 12:01:00,012] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:02:00 EST)" (scheduled at 2022-02-12 12:01:00-05:00)
+[2022-02-12 12:01:00,013] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:02:00 EST)" executed successfully
+[2022-02-12 12:02:00,008] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:03:00 EST)" (scheduled at 2022-02-12 12:02:00-05:00)
+[2022-02-12 12:02:00,009] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:03:00 EST)" executed successfully
+[2022-02-12 12:02:12,235] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:02:12,235] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:02:12,235] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 12:02:12,283] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:02:12,283] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:03:00,106] INFO [root.run:68] Running setup...
+[2022-02-12 12:03:00,108] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:03:00,109] INFO [root.setup:58] setup complete
+[2022-02-12 12:03:00,109] INFO [root.run:74] running bot....
+[2022-02-12 12:03:00,109] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:03:00,530] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:03:00,853] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-d7qb",{"micros":82057,"calls":["discord-sessions-green-prd-2-69",{"micros":80806,"calls":["start_session",{"micros":63232,"calls":["api-prd-main-0t42",{"micros":59547,"calls":["get_user",{"micros":3503},"add_authorized_ip",{"micros":10296},"get_guilds",{"micros":5398},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":13268,"calls":[]}]}]}] (Session ID: 473ca1fa3304185a6afd797a57615b23).
+[2022-02-12 12:03:00,854] INFO [root.on_connect:84] bot connected
+[2022-02-12 12:03:02,854] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:03:02,855] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:03:02,855] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=TypeError('multiexec() takes 2 positional arguments but 3 were given')>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 125, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 61, in update_db
+    db.multiexec('INSERT OR IGNORE INTO users (UserID, GuildID) VALUES (?, ?)',
+TypeError: multiexec() takes 2 positional arguments but 3 were given
+[2022-02-12 12:03:02,858] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:04:00,022] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:05:00 EST)" (scheduled at 2022-02-12 12:04:00-05:00)
+[2022-02-12 12:04:00,023] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:05:00 EST)" executed successfully
+[2022-02-12 12:05:00,007] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:06:00 EST)" (scheduled at 2022-02-12 12:05:00-05:00)
+[2022-02-12 12:05:00,008] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:06:00 EST)" executed successfully
+[2022-02-12 12:06:00,013] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:07:00 EST)" (scheduled at 2022-02-12 12:06:00-05:00)
+[2022-02-12 12:06:00,014] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:07:00 EST)" executed successfully
+[2022-02-12 12:07:00,005] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:08:00 EST)" (scheduled at 2022-02-12 12:07:00-05:00)
+[2022-02-12 12:07:00,006] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:08:00 EST)" executed successfully
+[2022-02-12 12:08:00,013] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:09:00 EST)" (scheduled at 2022-02-12 12:08:00-05:00)
+[2022-02-12 12:08:00,014] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:09:00 EST)" executed successfully
+[2022-02-12 12:09:00,004] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:10:00 EST)" (scheduled at 2022-02-12 12:09:00-05:00)
+[2022-02-12 12:09:00,005] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:10:00 EST)" executed successfully
+[2022-02-12 12:09:33,504] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:09:33,504] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:09:33,505] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 12:09:33,548] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:09:33,548] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:09:41,401] INFO [root.run:70] Running setup...
+[2022-02-12 12:09:41,403] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:09:41,404] INFO [root.setup:58] setup complete
+[2022-02-12 12:09:41,404] INFO [root.run:76] running bot....
+[2022-02-12 12:09:41,404] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:09:41,834] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:09:41,962] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-whn0",{"micros":79477,"calls":["discord-sessions-green-prd-2-32",{"micros":77039,"calls":["start_session",{"micros":30525,"calls":["api-prd-main-srvx",{"micros":26977,"calls":["get_user",{"micros":3015},"add_authorized_ip",{"micros":1628},"get_guilds",{"micros":3914},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":27133,"calls":[]}]}]}] (Session ID: 62960c5c68c1057b8dc8018045178334).
+[2022-02-12 12:09:41,963] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:09:43,979] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:09:43,980] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:09:43,980] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=AttributeError("'Guild' object has no attribute 'guild'")>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 127, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 64, in update_db
+    db.multiexec('INSERT OR IGNORE INTO users (GuildID) VALUES (?)',
+  File "e:\Github\AutoBan\lib\db\db.py", line 69, in multiexec
+    cur.executemany(command, valueset)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 65, in <genexpr>
+    ((member.guild.id,) for member in self.guilds))
+AttributeError: 'Guild' object has no attribute 'guild'
+[2022-02-12 12:09:43,984] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:10:00,002] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:11:00 EST)" (scheduled at 2022-02-12 12:10:00-05:00)
+[2022-02-12 12:10:00,003] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:11:00 EST)" executed successfully
+[2022-02-12 12:11:00,018] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:12:00 EST)" (scheduled at 2022-02-12 12:11:00-05:00)
+[2022-02-12 12:11:00,019] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:12:00 EST)" executed successfully
+[2022-02-12 12:12:00,016] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:13:00 EST)" (scheduled at 2022-02-12 12:12:00-05:00)
+[2022-02-12 12:12:00,017] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:13:00 EST)" executed successfully
+[2022-02-12 12:12:23,865] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:12:23,866] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:12:23,866] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 12:12:23,909] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:12:23,910] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:12:27,992] INFO [root.run:70] Running setup...
+[2022-02-12 12:12:27,994] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:12:27,994] INFO [root.setup:58] setup complete
+[2022-02-12 12:12:27,994] INFO [root.run:76] running bot....
+[2022-02-12 12:12:27,994] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:12:28,360] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:12:28,485] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-p6jp",{"micros":79236,"calls":["discord-sessions-green-prd-2-74",{"micros":78254,"calls":["start_session",{"micros":59917,"calls":["api-prd-main-hlqj",{"micros":56955,"calls":["get_user",{"micros":9833},"add_authorized_ip",{"micros":3365},"get_guilds",{"micros":6114},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":9939,"calls":[]}]}]}] (Session ID: 5a3759b8ab84d23bf585e66222d6e52b).
+[2022-02-12 12:12:28,486] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:12:30,512] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:12:30,512] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:12:30,513] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=AttributeError("'list' object has no attribute 'members'")>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 127, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 65, in update_db
+    ((member.guild.id,) for member in self.guilds.members))
+AttributeError: 'list' object has no attribute 'members'
+[2022-02-12 12:12:30,515] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:13:00,009] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:14:00 EST)" (scheduled at 2022-02-12 12:13:00-05:00)
+[2022-02-12 12:13:00,010] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:14:00 EST)" executed successfully
+[2022-02-12 12:14:00,005] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:15:00 EST)" (scheduled at 2022-02-12 12:14:00-05:00)
+[2022-02-12 12:14:00,006] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:15:00 EST)" executed successfully
+[2022-02-12 12:14:57,691] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:14:57,692] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:14:57,692] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 12:14:57,736] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:14:57,736] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:20:46,322] INFO [root.run:70] Running setup...
+[2022-02-12 12:20:46,324] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:20:46,324] INFO [root.setup:58] setup complete
+[2022-02-12 12:20:46,324] INFO [root.run:76] running bot....
+[2022-02-12 12:20:46,325] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:20:46,748] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:20:46,859] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-g9f5",{"micros":60231,"calls":["discord-sessions-green-prd-2-4",{"micros":58910,"calls":["start_session",{"micros":41414,"calls":["api-prd-main-1g9h",{"micros":34069,"calls":["get_user",{"micros":4151},"add_authorized_ip",{"micros":2471},"get_guilds",{"micros":4626},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":16841,"calls":[]}]}]}] (Session ID: ed8e7e72f082521cb2cfe09ffe59c698).
+[2022-02-12 12:20:46,859] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:20:48,872] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:20:48,872] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:20:48,873] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=AttributeError("'Guild' object has no attribute 'guild'")>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 127, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 64, in update_db
+    db.multiexec('INSERT OR IGNORE INTO users (GuildID) VALUES (?)',
+  File "e:\Github\AutoBan\lib\db\db.py", line 69, in multiexec
+    cur.executemany(command, valueset)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 65, in <genexpr>
+    ((member.guild.id,) for member in self.guilds))
+AttributeError: 'Guild' object has no attribute 'guild'
+[2022-02-12 12:20:48,875] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:21:00,009] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:22:00 EST)" (scheduled at 2022-02-12 12:21:00-05:00)
+[2022-02-12 12:21:00,010] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:22:00 EST)" executed successfully
+[2022-02-12 12:21:17,509] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:21:17,510] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:21:17,510] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 12:21:17,559] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:21:17,559] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:21:22,117] INFO [root.run:70] Running setup...
+[2022-02-12 12:21:22,119] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:21:22,119] INFO [root.setup:58] setup complete
+[2022-02-12 12:21:22,119] INFO [root.run:76] running bot....
+[2022-02-12 12:21:22,120] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:21:22,509] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:21:22,774] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-gfgh",{"micros":216604,"calls":["discord-sessions-green-prd-2-173",{"micros":215299,"calls":["start_session",{"micros":192343,"calls":["api-prd-main-7l6q",{"micros":186546,"calls":["get_user",{"micros":13161},"add_authorized_ip",{"micros":18179},"get_guilds",{"micros":72022},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":10014,"calls":[]}]}]}] (Session ID: b1b25a4cb9faaadd1553e578f3885356).
+[2022-02-12 12:21:22,775] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:21:24,795] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:21:24,795] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:21:24,795] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=AttributeError("'Guild' object has no attribute 'Guild'")>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 127, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 64, in update_db
+    db.multiexec('INSERT OR IGNORE INTO users (GuildID) VALUES (?)',
+  File "e:\Github\AutoBan\lib\db\db.py", line 69, in multiexec
+    cur.executemany(command, valueset)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 65, in <genexpr>
+    ((member.Guild.id,) for member in self.guilds))
+AttributeError: 'Guild' object has no attribute 'Guild'
+[2022-02-12 12:21:24,798] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:22:00,008] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:23:00 EST)" (scheduled at 2022-02-12 12:22:00-05:00)
+[2022-02-12 12:22:00,009] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:23:00 EST)" executed successfully
+[2022-02-12 12:22:25,415] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:22:25,415] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:22:25,415] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 12:22:25,462] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:22:25,462] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:22:35,963] INFO [root.run:70] Running setup...
+[2022-02-12 12:22:35,966] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:22:35,966] INFO [root.setup:58] setup complete
+[2022-02-12 12:22:35,966] INFO [root.run:76] running bot....
+[2022-02-12 12:22:35,967] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:22:36,381] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:22:36,542] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-t6x9",{"micros":117303,"calls":["discord-sessions-green-prd-2-150",{"micros":92980,"calls":["start_session",{"micros":78149,"calls":["discord-api-5c4b7f49cf-x7tc6",{"micros":69270,"calls":["get_user",{"micros":3600},"add_authorized_ip",{"micros":3448},"get_guilds",{"micros":13212},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":0,"calls":[]},"presence_connect",{"micros":9563,"calls":[]}]}]}] (Session ID: ae83b8e7965be54c9a2bc5f716f7f6ec).
+[2022-02-12 12:22:36,543] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:22:38,542] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:22:38,542] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:22:38,543] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=AttributeError("'Guild' object has no attribute 'guild'")>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 127, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 64, in update_db
+    db.multiexec('INSERT OR IGNORE INTO users (GuildID) VALUES (?)',
+  File "e:\Github\AutoBan\lib\db\db.py", line 69, in multiexec
+    cur.executemany(command, valueset)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 65, in <genexpr>
+    ((member.guild.id,) for member in self.guilds))
+AttributeError: 'Guild' object has no attribute 'guild'
+[2022-02-12 12:22:38,546] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:23:00,005] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:24:00 EST)" (scheduled at 2022-02-12 12:23:00-05:00)
+[2022-02-12 12:23:00,006] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:24:00 EST)" executed successfully
+[2022-02-12 12:24:00,005] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:25:00 EST)" (scheduled at 2022-02-12 12:24:00-05:00)
+[2022-02-12 12:24:00,006] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:25:00 EST)" executed successfully
+[2022-02-12 12:24:06,873] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:24:06,874] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:24:06,874] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 12:24:06,924] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:24:06,924] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:24:17,714] INFO [root.run:70] Running setup...
+[2022-02-12 12:24:17,716] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:24:17,716] INFO [root.setup:58] setup complete
+[2022-02-12 12:24:17,716] INFO [root.run:76] running bot....
+[2022-02-12 12:24:17,717] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:24:18,099] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:24:18,221] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-n8wf",{"micros":68831,"calls":["discord-sessions-green-prd-2-97",{"micros":67780,"calls":["start_session",{"micros":63011,"calls":["api-prd-main-n0q2",{"micros":58765,"calls":["get_user",{"micros":9860},"add_authorized_ip",{"micros":1272},"get_guilds",{"micros":4209},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":4036,"calls":[]}]}]}] (Session ID: eafe70c13d4512621d3ce76a8002faf4).
+[2022-02-12 12:24:18,222] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:24:20,227] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:24:20,228] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:24:20,228] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=AttributeError("'Bot' object has no attribute 'members'")>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 127, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 65, in update_db
+    ((member.guild.id,) for member in self.members))
+AttributeError: 'Bot' object has no attribute 'members'
+[2022-02-12 12:24:20,231] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:24:47,413] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:24:47,413] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:24:47,414] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 12:24:47,462] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:24:47,463] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:24:51,590] INFO [root.run:70] Running setup...
+[2022-02-12 12:24:51,592] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:24:51,592] INFO [root.setup:58] setup complete
+[2022-02-12 12:24:51,592] INFO [root.run:76] running bot....
+[2022-02-12 12:24:51,593] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:24:51,955] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:24:52,074] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-tdtk",{"micros":72287,"calls":["discord-sessions-green-prd-2-172",{"micros":71010,"calls":["start_session",{"micros":48180,"calls":["api-prd-main-dsj9",{"micros":42075,"calls":["get_user",{"micros":3600},"add_authorized_ip",{"micros":6603},"get_guilds",{"micros":3129},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":13033,"calls":[]}]}]}] (Session ID: fd4998d0543267e89cc01b3840edb176).
+[2022-02-12 12:24:52,075] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:24:54,085] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:24:54,086] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:24:54,103] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:25:00,014] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:26:00 EST)" (scheduled at 2022-02-12 12:25:00-05:00)
+[2022-02-12 12:25:00,015] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:26:00 EST)" executed successfully
+[2022-02-12 12:26:00,010] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:27:00 EST)" (scheduled at 2022-02-12 12:26:00-05:00)
+[2022-02-12 12:26:00,011] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:27:00 EST)" executed successfully
+[2022-02-12 12:26:09,417] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:26:09,418] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:26:09,418] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 12:26:09,462] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:26:09,462] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:27:26,414] INFO [root.run:70] Running setup...
+[2022-02-12 12:27:26,513] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:27:26,513] INFO [root.setup:58] setup complete
+[2022-02-12 12:27:26,513] INFO [root.run:76] running bot....
+[2022-02-12 12:27:26,513] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:27:26,951] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:27:27,065] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-z7w9",{"micros":65403,"calls":["discord-sessions-green-prd-2-175",{"micros":63265,"calls":["start_session",{"micros":49810,"calls":["api-prd-main-09q5",{"micros":46555,"calls":["get_user",{"micros":4426},"add_authorized_ip",{"micros":1602},"get_guilds",{"micros":19498},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 6e4b7ab69c1c67743c7b27d4a41fa0bc).
+[2022-02-12 12:27:27,066] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:27:29,070] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:27:29,070] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:27:29,071] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=OperationalError('near "(": syntax error')>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 127, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 64, in update_db
+    db.multiexec('UPDATE users (GuildID) VALUES (?)',
+  File "e:\Github\AutoBan\lib\db\db.py", line 69, in multiexec
+    cur.executemany(command, valueset)
+sqlite3.OperationalError: near "(": syntax error
+[2022-02-12 12:27:29,074] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:28:00,003] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:29:00 EST)" (scheduled at 2022-02-12 12:28:00-05:00)
+[2022-02-12 12:28:00,004] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:29:00 EST)" executed successfully
+[2022-02-12 12:28:25,054] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:28:25,054] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:28:25,055] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 12:28:25,100] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:28:25,100] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:28:29,335] INFO [root.run:70] Running setup...
+[2022-02-12 12:28:29,337] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:28:29,338] INFO [root.setup:58] setup complete
+[2022-02-12 12:28:29,338] INFO [root.run:76] running bot....
+[2022-02-12 12:28:29,338] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:28:29,680] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:28:29,814] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-9r13",{"micros":87156,"calls":["discord-sessions-green-prd-2-158",{"micros":84944,"calls":["start_session",{"micros":48993,"calls":["api-prd-main-fw40",{"micros":41634,"calls":["get_user",{"micros":4817},"add_authorized_ip",{"micros":2412},"get_guilds",{"micros":5755},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":16569,"calls":[]}]}]}] (Session ID: 860d4e3bfe15d69b87bbdf9cee640ef7).
+[2022-02-12 12:28:29,815] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:28:31,823] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:28:31,823] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:28:31,824] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=OperationalError('near "(": syntax error')>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 127, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 64, in update_db
+    db.multiexec('UPDATE users (GuildID) VALUES (?)',
+  File "e:\Github\AutoBan\lib\db\db.py", line 69, in multiexec
+    cur.executemany(command, valueset)
+sqlite3.OperationalError: near "(": syntax error
+[2022-02-12 12:28:31,826] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:29:00,005] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:30:00 EST)" (scheduled at 2022-02-12 12:29:00-05:00)
+[2022-02-12 12:29:00,007] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:30:00 EST)" executed successfully
+[2022-02-12 12:29:07,720] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:29:07,721] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:29:07,721] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 12:29:07,770] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:29:07,771] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:29:13,057] INFO [root.run:70] Running setup...
+[2022-02-12 12:29:13,059] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:29:13,059] INFO [root.setup:58] setup complete
+[2022-02-12 12:29:13,060] INFO [root.run:76] running bot....
+[2022-02-12 12:29:13,060] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:29:13,477] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:29:13,624] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-l2bv",{"micros":96591,"calls":["discord-sessions-green-prd-2-24",{"micros":94532,"calls":["start_session",{"micros":63866,"calls":["api-prd-main-crng",{"micros":60444,"calls":["get_user",{"micros":10498},"add_authorized_ip",{"micros":6823},"get_guilds",{"micros":9572},"coros_wait",{"micros":3}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":16010,"calls":[]}]}]}] (Session ID: 5b19222af806eaf62d9ad01151a47c25).
+[2022-02-12 12:29:13,625] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:29:15,643] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:29:15,643] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:29:15,644] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=OperationalError('near "GuildID": syntax error')>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 127, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 64, in update_db
+    db.multiexec('UPDATE users GuildID = ?',
+  File "e:\Github\AutoBan\lib\db\db.py", line 69, in multiexec
+    cur.executemany(command, valueset)
+sqlite3.OperationalError: near "GuildID": syntax error
+[2022-02-12 12:29:15,646] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:29:54,977] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:29:54,977] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:29:54,977] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 12:29:55,024] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:29:55,025] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:29:58,738] INFO [root.run:70] Running setup...
+[2022-02-12 12:29:58,740] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:29:58,740] INFO [root.setup:58] setup complete
+[2022-02-12 12:29:58,741] INFO [root.run:76] running bot....
+[2022-02-12 12:29:58,741] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:29:59,123] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:29:59,235] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-8lpm",{"micros":63753,"calls":["discord-sessions-green-prd-2-45",{"micros":58535,"calls":["start_session",{"micros":40596,"calls":["api-prd-main-8jpc",{"micros":36098,"calls":["get_user",{"micros":3738},"add_authorized_ip",{"micros":2836},"get_guilds",{"micros":4841},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: dd2cd11f84f844dc1bdb052737bd9411).
+[2022-02-12 12:29:59,236] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:30:01,260] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:30:01,261] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:30:01,261] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=OperationalError('near "GuildID": syntax error')>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 127, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 64, in update_db
+    db.execute('UPDATE users GuildID = ?',
+  File "e:\Github\AutoBan\lib\db\db.py", line 65, in execute
+    cur.execute(command, tuple(values))
+sqlite3.OperationalError: near "GuildID": syntax error
+[2022-02-12 12:30:01,264] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:30:50,948] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:30:50,948] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:30:50,948] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 12:30:50,991] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:30:50,992] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:30:54,960] INFO [root.run:70] Running setup...
+[2022-02-12 12:30:54,961] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:30:54,962] INFO [root.setup:58] setup complete
+[2022-02-12 12:30:54,962] INFO [root.run:76] running bot....
+[2022-02-12 12:30:54,962] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:30:55,414] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:30:55,533] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-62cv",{"micros":71558,"calls":["discord-sessions-green-prd-2-6",{"micros":68658,"calls":["start_session",{"micros":63336,"calls":["api-prd-main-brff",{"micros":58815,"calls":["get_user",{"micros":8439},"add_authorized_ip",{"micros":5679},"get_guilds",{"micros":9348},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":0,"calls":[]}]}]}] (Session ID: b0ac92f59c7195ce3447074c9f26bf9b).
+[2022-02-12 12:30:55,534] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:30:57,542] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:30:57,543] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:30:57,561] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:31:00,011] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:32:00 EST)" (scheduled at 2022-02-12 12:31:00-05:00)
+[2022-02-12 12:31:00,013] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:32:00 EST)" executed successfully
+[2022-02-12 12:32:00,004] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:33:00 EST)" (scheduled at 2022-02-12 12:32:00-05:00)
+[2022-02-12 12:32:00,005] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:33:00 EST)" executed successfully
+[2022-02-12 12:32:00,907] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:32:00,908] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:32:00,908] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 12:32:00,955] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:32:00,955] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:32:09,980] INFO [root.run:70] Running setup...
+[2022-02-12 12:32:09,982] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:32:09,982] INFO [root.setup:58] setup complete
+[2022-02-12 12:32:09,982] INFO [root.run:76] running bot....
+[2022-02-12 12:32:09,983] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:32:10,521] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:32:10,640] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-drcs",{"micros":71014,"calls":["discord-sessions-green-prd-2-103",{"micros":67145,"calls":["start_session",{"micros":46026,"calls":["api-prd-main-9102",{"micros":41725,"calls":["get_user",{"micros":3586},"add_authorized_ip",{"micros":1546},"get_guilds",{"micros":6275},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":20291,"calls":[]}]}]}] (Session ID: 0b590260447de82158254205dd351407).
+[2022-02-12 12:32:10,641] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:32:12,656] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:32:12,657] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:32:12,658] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:33:00,014] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:34:00 EST)" (scheduled at 2022-02-12 12:33:00-05:00)
+[2022-02-12 12:33:00,015] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:34:00 EST)" executed successfully
+[2022-02-12 12:34:00,026] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:35:00 EST)" (scheduled at 2022-02-12 12:34:00-05:00)
+[2022-02-12 12:34:00,027] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:35:00 EST)" executed successfully
+[2022-02-12 12:35:00,016] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:36:00 EST)" (scheduled at 2022-02-12 12:35:00-05:00)
+[2022-02-12 12:35:00,017] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:36:00 EST)" executed successfully
+[2022-02-12 12:35:23,346] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:35:23,346] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:35:23,347] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 12:35:23,390] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:35:23,391] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:35:27,757] INFO [root.run:70] Running setup...
+[2022-02-12 12:35:27,759] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:35:27,759] INFO [root.setup:58] setup complete
+[2022-02-12 12:35:27,759] INFO [root.run:76] running bot....
+[2022-02-12 12:35:27,759] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:35:28,180] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:35:28,396] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-8wp4",{"micros":167250,"calls":["discord-sessions-green-prd-2-61",{"micros":166220,"calls":["start_session",{"micros":140296,"calls":["api-prd-main-gpvk",{"micros":126394,"calls":["get_user",{"micros":13311},"add_authorized_ip",{"micros":7349},"get_guilds",{"micros":18233},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":18713,"calls":[]}]}]}] (Session ID: 11f66438dbf9c09f9dbf69d3b30bf316).
+[2022-02-12 12:35:28,404] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:35:30,437] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:35:30,437] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:35:30,438] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:36:00,015] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:37:00 EST)" (scheduled at 2022-02-12 12:36:00-05:00)
+[2022-02-12 12:36:00,016] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:37:00 EST)" executed successfully
+[2022-02-12 12:36:40,640] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:36:40,641] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:36:40,641] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 12:36:40,689] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:36:40,689] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:36:44,811] INFO [root.run:70] Running setup...
+[2022-02-12 12:36:44,813] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:36:44,813] INFO [root.setup:58] setup complete
+[2022-02-12 12:36:44,814] INFO [root.run:76] running bot....
+[2022-02-12 12:36:44,814] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:36:45,246] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:36:45,375] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-jrrv",{"micros":81582,"calls":["discord-sessions-green-prd-2-170",{"micros":79791,"calls":["start_session",{"micros":58723,"calls":["api-prd-main-s0lq",{"micros":55234,"calls":["get_user",{"micros":5303},"add_authorized_ip",{"micros":1329},"get_guilds",{"micros":10566},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":6482,"calls":[]}]}]}] (Session ID: 67a9bc5d85b0d22b33b49845622a5a0e).
+[2022-02-12 12:36:45,376] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:36:47,392] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:36:47,392] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:36:47,393] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:37:00,008] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:38:00 EST)" (scheduled at 2022-02-12 12:37:00-05:00)
+[2022-02-12 12:37:00,009] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:38:00 EST)" executed successfully
+[2022-02-12 12:37:36,197] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:37:36,197] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:37:36,197] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 12:37:36,249] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:37:36,249] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:37:40,246] INFO [root.run:68] Running setup...
+[2022-02-12 12:37:40,249] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:37:40,249] INFO [root.setup:58] setup complete
+[2022-02-12 12:37:40,249] INFO [root.run:74] running bot....
+[2022-02-12 12:37:40,250] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:37:40,680] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:37:40,959] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-jqb3",{"micros":227727,"calls":["discord-sessions-green-prd-2-125",{"micros":225898,"calls":["start_session",{"micros":185964,"calls":["api-prd-main-bsg8",{"micros":163017,"calls":["get_user",{"micros":12979},"add_authorized_ip",{"micros":11326},"get_guilds",{"micros":34411},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":23550,"calls":[]}]}]}] (Session ID: e5e8a2d284c7fb60cc6095a79f0390bf).
+[2022-02-12 12:37:40,960] INFO [root.on_connect:84] bot connected
+[2022-02-12 12:37:42,980] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:37:42,980] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:37:42,981] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:38:00,011] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:39:00 EST)" (scheduled at 2022-02-12 12:38:00-05:00)
+[2022-02-12 12:38:00,012] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:39:00 EST)" executed successfully
+[2022-02-12 12:38:12,443] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:38:12,443] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:38:12,444] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 12:38:12,489] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:38:12,490] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:38:26,397] INFO [root.run:68] Running setup...
+[2022-02-12 12:38:26,399] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:38:26,399] INFO [root.setup:58] setup complete
+[2022-02-12 12:38:26,399] INFO [root.run:74] running bot....
+[2022-02-12 12:38:26,399] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:38:26,754] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:38:26,901] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-qf84",{"micros":98328,"calls":["discord-sessions-green-prd-2-29",{"micros":96869,"calls":["start_session",{"micros":82760,"calls":["api-prd-main-mc4j",{"micros":79640,"calls":["get_user",{"micros":10084},"add_authorized_ip",{"micros":7541},"get_guilds",{"micros":16294},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":6453,"calls":[]}]}]}] (Session ID: c713fcd4f83ea78aba85f94529e6b22c).
+[2022-02-12 12:38:26,902] INFO [root.on_connect:84] bot connected
+[2022-02-12 12:38:28,915] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:38:28,916] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:38:28,934] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:39:00,003] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:40:00 EST)" (scheduled at 2022-02-12 12:39:00-05:00)
+[2022-02-12 12:39:00,004] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:40:00 EST)" executed successfully
+[2022-02-12 12:39:02,816] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:39:02,817] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:39:02,817] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 12:39:02,863] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:39:02,863] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:40:48,188] INFO [root.run:70] Running setup...
+[2022-02-12 12:40:48,190] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:40:48,190] INFO [root.setup:58] setup complete
+[2022-02-12 12:40:48,191] INFO [root.run:76] running bot....
+[2022-02-12 12:40:48,191] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:40:48,556] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:40:48,701] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-jrrv",{"micros":97381,"calls":["discord-sessions-green-prd-2-99",{"micros":95918,"calls":["start_session",{"micros":71360,"calls":["api-prd-main-bmrm",{"micros":67788,"calls":["get_user",{"micros":4662},"add_authorized_ip",{"micros":7701},"get_guilds",{"micros":11802},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":22977,"calls":[]}]}]}] (Session ID: c4fccee995e5aec74375eefaa4b875b2).
+[2022-02-12 12:40:48,702] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:40:50,712] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:40:50,712] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:40:50,731] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:41:00,005] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:42:00 EST)" (scheduled at 2022-02-12 12:41:00-05:00)
+[2022-02-12 12:41:00,006] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:42:00 EST)" executed successfully
+[2022-02-12 12:42:00,007] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:43:00 EST)" (scheduled at 2022-02-12 12:42:00-05:00)
+[2022-02-12 12:42:00,008] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:43:00 EST)" executed successfully
+[2022-02-12 12:43:00,009] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:44:00 EST)" (scheduled at 2022-02-12 12:43:00-05:00)
+[2022-02-12 12:43:00,010] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:44:00 EST)" executed successfully
+[2022-02-12 12:43:12,680] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:43:12,681] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:43:12,681] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 12:43:12,728] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:43:12,729] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:43:16,870] INFO [root.run:70] Running setup...
+[2022-02-12 12:43:16,894] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:43:16,894] INFO [root.setup:58] setup complete
+[2022-02-12 12:43:16,894] INFO [root.run:76] running bot....
+[2022-02-12 12:43:16,895] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:43:17,334] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:43:17,500] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-ds4t",{"micros":113183,"calls":["discord-sessions-green-prd-2-13",{"micros":112308,"calls":["start_session",{"micros":52925,"calls":["api-prd-main-h0n5",{"micros":49894,"calls":["get_user",{"micros":4072},"add_authorized_ip",{"micros":8542},"get_guilds",{"micros":7482},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":53120,"calls":[]}]}]}] (Session ID: 4c1ee08358ee831f07da0193e94308b2).
+[2022-02-12 12:43:17,501] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:43:19,521] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:43:19,521] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:43:19,640] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:43:38,429] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:43:38,430] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:43:38,430] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 12:43:38,475] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:43:38,476] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:43:42,393] INFO [root.run:70] Running setup...
+[2022-02-12 12:43:42,417] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:43:42,417] INFO [root.setup:58] setup complete
+[2022-02-12 12:43:42,418] INFO [root.run:76] running bot....
+[2022-02-12 12:43:42,418] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:43:42,807] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:43:42,982] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-lpz7",{"micros":125727,"calls":["discord-sessions-green-prd-2-80",{"micros":124171,"calls":["start_session",{"micros":104190,"calls":["api-prd-main-g3mh",{"micros":52986,"calls":["get_user",{"micros":3200},"add_authorized_ip",{"micros":4744},"get_guilds",{"micros":6067},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":11607,"calls":[]}]}]}] (Session ID: 61dd511b92e4100a0839b1644211b02b).
+[2022-02-12 12:43:42,984] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:43:45,007] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:43:45,008] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:43:45,017] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:44:00,008] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:45:00 EST)" (scheduled at 2022-02-12 12:44:00-05:00)
+[2022-02-12 12:44:00,022] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:45:00 EST)" executed successfully
+[2022-02-12 12:45:00,006] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:46:00 EST)" (scheduled at 2022-02-12 12:45:00-05:00)
+[2022-02-12 12:45:00,007] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:46:00 EST)" executed successfully
+[2022-02-12 12:45:55,574] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:45:55,574] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:45:55,575] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 12:45:55,625] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:45:55,625] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:46:06,176] INFO [root.run:70] Running setup...
+[2022-02-12 12:46:06,177] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:46:06,178] INFO [root.setup:58] setup complete
+[2022-02-12 12:46:06,178] INFO [root.run:76] running bot....
+[2022-02-12 12:46:06,178] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:46:06,599] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:46:06,704] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-js98",{"micros":59207,"calls":["discord-sessions-green-prd-2-109",{"micros":54692,"calls":["start_session",{"micros":39364,"calls":["api-prd-main-pzql",{"micros":33052,"calls":["get_user",{"micros":3051},"add_authorized_ip",{"micros":1424},"get_guilds",{"micros":4953},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":10642,"calls":[]}]}]}] (Session ID: ca412d5119a211ecf4fbb1ff8a5df1dc).
+[2022-02-12 12:46:06,705] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:46:08,715] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:46:08,716] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:46:08,729] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:47:00,004] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:48:00 EST)" (scheduled at 2022-02-12 12:47:00-05:00)
+[2022-02-12 12:47:00,005] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:48:00 EST)" executed successfully
+[2022-02-12 12:47:25,883] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:47:25,883] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:47:25,883] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 12:47:25,942] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:47:25,942] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:47:31,048] INFO [root.run:70] Running setup...
+[2022-02-12 12:47:31,050] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:47:31,051] INFO [root.setup:58] setup complete
+[2022-02-12 12:47:31,051] INFO [root.run:76] running bot....
+[2022-02-12 12:47:31,051] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:47:31,433] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:47:31,528] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-c6n8",{"micros":43253,"calls":["discord-sessions-green-prd-2-64",{"micros":41902,"calls":["start_session",{"micros":30958,"calls":["api-prd-main-99td",{"micros":27038,"calls":["get_user",{"micros":3042},"add_authorized_ip",{"micros":1280},"get_guilds",{"micros":3897},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":10311,"calls":[]}]}]}] (Session ID: 6eb530ac09c4e3c83bb320c3b807e4b0).
+[2022-02-12 12:47:31,529] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:47:33,540] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:47:33,540] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:47:33,560] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:47:56,968] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:47:56,968] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:47:56,968] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 12:47:57,016] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:47:57,017] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:48:05,170] INFO [root.run:70] Running setup...
+[2022-02-12 12:48:05,172] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:48:05,172] INFO [root.setup:58] setup complete
+[2022-02-12 12:48:05,172] INFO [root.run:76] running bot....
+[2022-02-12 12:48:05,173] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:48:05,576] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:48:05,677] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-r9rq",{"micros":50494,"calls":["discord-sessions-green-prd-2-67",{"micros":48364,"calls":["start_session",{"micros":32247,"calls":["discord-api-5c4b7f49cf-x7tc6",{"micros":28697,"calls":["get_user",{"micros":4548},"add_authorized_ip",{"micros":2015},"get_guilds",{"micros":4188},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":10492,"calls":[]}]}]}] (Session ID: b12ad94ca216094725d29c0d1b38ac02).
+[2022-02-12 12:48:05,679] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:48:07,698] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:48:07,698] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:48:07,726] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:49:00,013] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:50:00 EST)" (scheduled at 2022-02-12 12:49:00-05:00)
+[2022-02-12 12:49:00,310] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:50:00 EST)" executed successfully
+[2022-02-12 12:50:00,009] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:51:00 EST)" (scheduled at 2022-02-12 12:50:00-05:00)
+[2022-02-12 12:50:00,010] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:51:00 EST)" executed successfully
+[2022-02-12 12:50:46,915] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:50:46,915] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:50:46,916] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 12:50:46,961] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:50:46,962] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:50:50,970] INFO [root.run:70] Running setup...
+[2022-02-12 12:50:50,994] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:50:50,994] INFO [root.setup:58] setup complete
+[2022-02-12 12:50:50,995] INFO [root.run:76] running bot....
+[2022-02-12 12:50:50,995] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:50:51,463] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:50:51,569] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-2s4s",{"micros":49556,"calls":["discord-sessions-green-prd-2-148",{"micros":47029,"calls":["start_session",{"micros":35280,"calls":["api-prd-main-2q4k",{"micros":30900,"calls":["get_user",{"micros":3546},"add_authorized_ip",{"micros":1693},"get_guilds",{"micros":4202},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":8237,"calls":[]}]}]}] (Session ID: 01e8fa340e715699b1d3aa5c21672720).
+[2022-02-12 12:50:51,570] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:50:53,578] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:50:53,578] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:50:53,579] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:51:00,013] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:52:00 EST)" (scheduled at 2022-02-12 12:51:00-05:00)
+[2022-02-12 12:51:00,014] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:52:00 EST)" executed successfully
+[2022-02-12 12:52:00,015] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:53:00 EST)" (scheduled at 2022-02-12 12:52:00-05:00)
+[2022-02-12 12:52:00,016] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:53:00 EST)" executed successfully
+[2022-02-12 12:52:08,017] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:52:08,017] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:52:08,017] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 12:52:08,062] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:52:08,062] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:52:12,495] INFO [root.run:70] Running setup...
+[2022-02-12 12:52:12,518] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:52:12,518] INFO [root.setup:58] setup complete
+[2022-02-12 12:52:12,518] INFO [root.run:76] running bot....
+[2022-02-12 12:52:12,519] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:52:12,889] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:52:13,046] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-38kr",{"micros":106349,"calls":["discord-sessions-green-prd-2-64",{"micros":104394,"calls":["start_session",{"micros":55625,"calls":["api-prd-main-nzbk",{"micros":46459,"calls":["get_user",{"micros":7115},"add_authorized_ip",{"micros":1400},"get_guilds",{"micros":4271},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":26163,"calls":[]}]}]}] (Session ID: 5ca9678d5415dcd8323ee8865440467a).
+[2022-02-12 12:52:13,047] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:52:15,070] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:52:15,071] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:52:15,071] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:53:00,010] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:54:00 EST)" (scheduled at 2022-02-12 12:53:00-05:00)
+[2022-02-12 12:53:00,011] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:54:00 EST)" executed successfully
+[2022-02-12 12:53:15,275] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:53:15,276] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:53:15,276] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 12:53:15,319] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:53:15,319] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:53:22,328] INFO [root.run:70] Running setup...
+[2022-02-12 12:53:22,351] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:53:22,351] INFO [root.setup:58] setup complete
+[2022-02-12 12:53:22,351] INFO [root.run:76] running bot....
+[2022-02-12 12:53:22,351] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:53:22,742] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:53:22,854] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-njg6",{"micros":69812,"calls":["discord-sessions-green-prd-2-34",{"micros":67891,"calls":["start_session",{"micros":33498,"calls":["api-prd-main-qt7t",{"micros":29860,"calls":["get_user",{"micros":3247},"add_authorized_ip",{"micros":1378},"get_guilds",{"micros":2888},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":26382,"calls":[]}]}]}] (Session ID: 8fcece1adfa6684f999b8103597d3a99).
+[2022-02-12 12:53:22,855] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:53:24,860] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:53:24,860] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:53:24,861] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:54:00,009] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:55:00 EST)" (scheduled at 2022-02-12 12:54:00-05:00)
+[2022-02-12 12:54:00,010] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:55:00 EST)" executed successfully
+[2022-02-12 12:55:00,011] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:56:00 EST)" (scheduled at 2022-02-12 12:55:00-05:00)
+[2022-02-12 12:55:00,012] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:56:00 EST)" executed successfully
+[2022-02-12 12:55:10,530] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 12:55:10,530] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 12:55:10,531] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 12:55:10,577] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 12:55:10,578] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 12:55:14,289] INFO [root.run:70] Running setup...
+[2022-02-12 12:55:14,301] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 12:55:14,301] INFO [root.setup:58] setup complete
+[2022-02-12 12:55:14,301] INFO [root.run:76] running bot....
+[2022-02-12 12:55:14,302] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 12:55:14,708] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 12:55:14,847] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-88n6",{"micros":93651,"calls":["discord-sessions-green-prd-2-72",{"micros":88989,"calls":["start_session",{"micros":76281,"calls":["api-prd-main-hs06",{"micros":72456,"calls":["get_user",{"micros":9336},"add_authorized_ip",{"micros":3559},"get_guilds",{"micros":9941},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":12080,"calls":[]}]}]}] (Session ID: 826b97ff46e69bbf37c9d80f425d9d54).
+[2022-02-12 12:55:14,848] INFO [root.on_connect:86] bot connected
+[2022-02-12 12:55:16,863] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 12:55:16,864] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 12:55:16,865] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 12:56:00,014] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:57:00 EST)" (scheduled at 2022-02-12 12:56:00-05:00)
+[2022-02-12 12:56:00,015] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:57:00 EST)" executed successfully
+[2022-02-12 12:57:00,021] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:58:00 EST)" (scheduled at 2022-02-12 12:57:00-05:00)
+[2022-02-12 12:57:00,022] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:58:00 EST)" executed successfully
+[2022-02-12 12:58:00,008] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:59:00 EST)" (scheduled at 2022-02-12 12:58:00-05:00)
+[2022-02-12 12:58:00,009] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 12:59:00 EST)" executed successfully
+[2022-02-12 12:59:00,010] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:00:00 EST)" (scheduled at 2022-02-12 12:59:00-05:00)
+[2022-02-12 12:59:00,011] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:00:00 EST)" executed successfully
+[2022-02-12 13:00:00,011] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:01:00 EST)" (scheduled at 2022-02-12 13:00:00-05:00)
+[2022-02-12 13:00:00,012] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:01:00 EST)" executed successfully
+[2022-02-12 13:01:00,008] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:02:00 EST)" (scheduled at 2022-02-12 13:01:00-05:00)
+[2022-02-12 13:01:00,009] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:02:00 EST)" executed successfully
+[2022-02-12 13:01:22,413] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 13:01:22,413] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 13:01:22,414] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 13:01:22,462] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 13:01:22,463] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 13:01:31,962] INFO [root.run:70] Running setup...
+[2022-02-12 13:01:32,056] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 13:01:32,057] INFO [root.setup:58] setup complete
+[2022-02-12 13:01:32,057] INFO [root.run:76] running bot....
+[2022-02-12 13:01:32,057] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 13:01:32,468] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 13:01:32,577] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-42dv",{"micros":58564,"calls":["discord-sessions-green-prd-2-170",{"micros":56554,"calls":["start_session",{"micros":36334,"calls":["api-prd-main-srvx",{"micros":32803,"calls":["get_user",{"micros":3220},"add_authorized_ip",{"micros":1708},"get_guilds",{"micros":5383},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":2273,"calls":[]}]}]}] (Session ID: f9e91f15367add239eeba5a8556eb7c7).
+[2022-02-12 13:01:32,579] INFO [root.on_connect:86] bot connected
+[2022-02-12 13:01:34,595] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 13:01:34,595] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 13:01:34,612] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 13:02:00,013] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:03:00 EST)" (scheduled at 2022-02-12 13:02:00-05:00)
+[2022-02-12 13:02:00,014] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:03:00 EST)" executed successfully
+[2022-02-12 13:02:12,267] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 13:02:12,267] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 13:02:12,268] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 13:02:12,314] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 13:02:12,314] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 13:02:16,426] INFO [root.run:70] Running setup...
+[2022-02-12 13:02:16,474] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 13:02:16,474] INFO [root.setup:58] setup complete
+[2022-02-12 13:02:16,475] INFO [root.run:76] running bot....
+[2022-02-12 13:02:16,475] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 13:02:16,870] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 13:02:16,966] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-zfxx",{"micros":46809,"calls":["discord-sessions-green-prd-2-95",{"micros":45568,"calls":["start_session",{"micros":37296,"calls":["api-prd-main-bpj6",{"micros":32067,"calls":["get_user",{"micros":3559},"add_authorized_ip",{"micros":1747},"get_guilds",{"micros":5664},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":3805,"calls":[]}]}]}] (Session ID: 84bee320ac8a47d4562efdddd55296dc).
+[2022-02-12 13:02:16,968] INFO [root.on_connect:86] bot connected
+[2022-02-12 13:02:18,994] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 13:02:18,994] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 13:02:18,995] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 13:02:51,066] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 13:02:51,066] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 13:02:51,066] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 13:02:51,110] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 13:02:51,111] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 13:02:54,053] INFO [root.run:70] Running setup...
+[2022-02-12 13:02:54,064] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 13:02:54,064] INFO [root.setup:58] setup complete
+[2022-02-12 13:02:54,064] INFO [root.run:76] running bot....
+[2022-02-12 13:02:54,065] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 13:02:54,437] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 13:02:54,545] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-xhvr",{"micros":55873,"calls":["discord-sessions-green-prd-2-13",{"micros":54617,"calls":["start_session",{"micros":38242,"calls":["api-prd-main-b4jm",{"micros":33668,"calls":["get_user",{"micros":3889},"add_authorized_ip",{"micros":2308},"get_guilds",{"micros":6712},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":12653,"calls":[]}]}]}] (Session ID: 0093058e363850f8bac766c6e0a7e518).
+[2022-02-12 13:02:54,547] INFO [root.on_connect:86] bot connected
+[2022-02-12 13:02:56,562] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 13:02:56,563] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 13:02:56,563] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 13:03:00,007] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:04:00 EST)" (scheduled at 2022-02-12 13:03:00-05:00)
+[2022-02-12 13:03:00,008] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:04:00 EST)" executed successfully
+[2022-02-12 13:04:00,014] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:05:00 EST)" (scheduled at 2022-02-12 13:04:00-05:00)
+[2022-02-12 13:04:00,015] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:05:00 EST)" executed successfully
+[2022-02-12 13:05:00,017] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:06:00 EST)" (scheduled at 2022-02-12 13:05:00-05:00)
+[2022-02-12 13:05:00,017] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:06:00 EST)" executed successfully
+[2022-02-12 13:06:00,007] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:07:00 EST)" (scheduled at 2022-02-12 13:06:00-05:00)
+[2022-02-12 13:06:00,008] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:07:00 EST)" executed successfully
+[2022-02-12 13:07:00,002] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:08:00 EST)" (scheduled at 2022-02-12 13:07:00-05:00)
+[2022-02-12 13:07:00,003] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:08:00 EST)" executed successfully
+[2022-02-12 13:08:00,017] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:09:00 EST)" (scheduled at 2022-02-12 13:08:00-05:00)
+[2022-02-12 13:08:00,018] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:09:00 EST)" executed successfully
+[2022-02-12 13:08:05,765] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 13:08:05,765] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 13:08:05,765] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 13:08:05,821] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 13:08:05,821] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 13:09:18,814] INFO [root.run:70] Running setup...
+[2022-02-12 13:09:18,908] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 13:09:18,908] INFO [root.setup:58] setup complete
+[2022-02-12 13:09:18,909] INFO [root.run:76] running bot....
+[2022-02-12 13:09:18,909] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 13:09:19,347] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 13:09:19,496] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-jrrv",{"micros":93890,"calls":["discord-sessions-green-prd-2-172",{"micros":92114,"calls":["start_session",{"micros":85759,"calls":["api-prd-main-cf98",{"micros":79392,"calls":["get_user",{"micros":8444},"add_authorized_ip",{"micros":4765},"get_guilds",{"micros":8966},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":5587,"calls":[]}]}]}] (Session ID: 0ea38ee81277567cfc909355d5318624).
+[2022-02-12 13:09:19,498] INFO [root.on_connect:86] bot connected
+[2022-02-12 13:09:21,516] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 13:09:21,516] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 13:09:21,532] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 13:10:00,002] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:11:00 EST)" (scheduled at 2022-02-12 13:10:00-05:00)
+[2022-02-12 13:10:00,003] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:11:00 EST)" executed successfully
+[2022-02-12 13:11:00,009] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:12:00 EST)" (scheduled at 2022-02-12 13:11:00-05:00)
+[2022-02-12 13:11:00,010] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:12:00 EST)" executed successfully
+[2022-02-12 13:12:00,009] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:13:00 EST)" (scheduled at 2022-02-12 13:12:00-05:00)
+[2022-02-12 13:12:00,010] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:13:00 EST)" executed successfully
+[2022-02-12 13:13:00,012] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:14:00 EST)" (scheduled at 2022-02-12 13:13:00-05:00)
+[2022-02-12 13:13:00,013] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:14:00 EST)" executed successfully
+[2022-02-12 13:14:00,002] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:15:00 EST)" (scheduled at 2022-02-12 13:14:00-05:00)
+[2022-02-12 13:14:00,003] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:15:00 EST)" executed successfully
+[2022-02-12 13:14:22,782] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 13:14:22,783] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 13:14:22,783] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 13:14:22,833] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 13:14:22,834] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 13:17:46,062] INFO [root.run:70] Running setup...
+[2022-02-12 13:17:46,138] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 13:17:46,138] INFO [root.setup:58] setup complete
+[2022-02-12 13:17:46,139] INFO [root.run:76] running bot....
+[2022-02-12 13:17:46,139] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 13:17:46,556] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 13:17:46,668] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-5d9q",{"micros":64405,"calls":["discord-sessions-green-prd-2-88",{"micros":63261,"calls":["start_session",{"micros":41383,"calls":["api-prd-main-rvg9",{"micros":37453,"calls":["get_user",{"micros":3542},"add_authorized_ip",{"micros":1479},"get_guilds",{"micros":3839},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":21234,"calls":[]}]}]}] (Session ID: d975c1f2e53189b0e789b0a72a7def4b).
+[2022-02-12 13:17:46,670] INFO [root.on_connect:86] bot connected
+[2022-02-12 13:17:48,688] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 13:17:48,688] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 13:17:48,706] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 13:18:00,013] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:19:00 EST)" (scheduled at 2022-02-12 13:18:00-05:00)
+[2022-02-12 13:18:00,014] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:19:00 EST)" executed successfully
+[2022-02-12 13:19:00,000] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:20:00 EST)" (scheduled at 2022-02-12 13:19:00-05:00)
+[2022-02-12 13:19:00,001] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:20:00 EST)" executed successfully
+[2022-02-12 13:19:03,107] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 13:19:03,107] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 13:19:03,108] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 13:19:03,151] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 13:19:03,152] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 13:19:07,138] INFO [root.run:70] Running setup...
+[2022-02-12 13:19:07,164] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 13:19:07,164] INFO [root.setup:58] setup complete
+[2022-02-12 13:19:07,164] INFO [root.run:76] running bot....
+[2022-02-12 13:19:07,165] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 13:19:07,603] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 13:19:07,822] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-l2bv",{"micros":170396,"calls":["discord-sessions-green-prd-2-166",{"micros":168216,"calls":["start_session",{"micros":144424,"calls":["api-prd-main-n02m",{"micros":139033,"calls":["get_user",{"micros":18443},"add_authorized_ip",{"micros":11856},"get_guilds",{"micros":23338},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":1860,"calls":[]}]}]}] (Session ID: dfc902c7d36390c34e4ad11cfeba4771).
+[2022-02-12 13:19:07,824] INFO [root.on_connect:86] bot connected
+[2022-02-12 13:19:09,840] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 13:19:09,840] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 13:19:09,841] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 13:19:39,793] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 13:19:39,793] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 13:19:39,794] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 13:19:39,838] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 13:19:39,838] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 13:19:44,009] INFO [root.run:70] Running setup...
+[2022-02-12 13:19:44,033] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 13:19:44,034] INFO [root.setup:58] setup complete
+[2022-02-12 13:19:44,034] INFO [root.run:76] running bot....
+[2022-02-12 13:19:44,034] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 13:19:44,434] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 13:19:44,564] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-x3xr",{"micros":83995,"calls":["discord-sessions-green-prd-2-110",{"micros":82682,"calls":["start_session",{"micros":54446,"calls":["api-prd-main-g3mh",{"micros":51061,"calls":["get_user",{"micros":5551},"add_authorized_ip",{"micros":1621},"get_guilds",{"micros":7465},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":13005,"calls":[]}]}]}] (Session ID: ab99278610443ea962b5566561e7533a).
+[2022-02-12 13:19:44,565] INFO [root.on_connect:86] bot connected
+[2022-02-12 13:19:46,579] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 13:19:46,579] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 13:19:46,580] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 13:20:00,013] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:21:00 EST)" (scheduled at 2022-02-12 13:20:00-05:00)
+[2022-02-12 13:20:00,014] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:21:00 EST)" executed successfully
+[2022-02-12 13:21:00,003] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:22:00 EST)" (scheduled at 2022-02-12 13:21:00-05:00)
+[2022-02-12 13:21:00,017] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:22:00 EST)" executed successfully
+[2022-02-12 13:22:00,014] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:23:00 EST)" (scheduled at 2022-02-12 13:22:00-05:00)
+[2022-02-12 13:22:00,015] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:23:00 EST)" executed successfully
+[2022-02-12 13:23:00,002] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:24:00 EST)" (scheduled at 2022-02-12 13:23:00-05:00)
+[2022-02-12 13:23:00,003] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:24:00 EST)" executed successfully
+[2022-02-12 13:24:00,016] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:25:00 EST)" (scheduled at 2022-02-12 13:24:00-05:00)
+[2022-02-12 13:24:00,017] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:25:00 EST)" executed successfully
+[2022-02-12 13:25:00,000] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:26:00 EST)" (scheduled at 2022-02-12 13:25:00-05:00)
+[2022-02-12 13:25:00,001] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:26:00 EST)" executed successfully
+[2022-02-12 13:26:00,005] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:27:00 EST)" (scheduled at 2022-02-12 13:26:00-05:00)
+[2022-02-12 13:26:00,006] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:27:00 EST)" executed successfully
+[2022-02-12 13:27:00,005] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:28:00 EST)" (scheduled at 2022-02-12 13:27:00-05:00)
+[2022-02-12 13:27:00,006] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:28:00 EST)" executed successfully
+[2022-02-12 13:28:00,013] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:29:00 EST)" (scheduled at 2022-02-12 13:28:00-05:00)
+[2022-02-12 13:28:00,014] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:29:00 EST)" executed successfully
+[2022-02-12 13:29:00,011] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:30:00 EST)" (scheduled at 2022-02-12 13:29:00-05:00)
+[2022-02-12 13:29:00,012] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:30:00 EST)" executed successfully
+[2022-02-12 13:29:23,925] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 13:29:23,925] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 13:29:23,925] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 13:29:23,974] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 13:29:23,974] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 13:34:06,094] INFO [root.run:70] Running setup...
+[2022-02-12 13:34:06,192] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 13:34:06,192] INFO [root.setup:58] setup complete
+[2022-02-12 13:34:06,192] INFO [root.run:76] running bot....
+[2022-02-12 13:34:06,193] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 13:34:06,629] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 13:34:06,757] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-x9p8",{"micros":75395,"calls":["discord-sessions-green-prd-2-162",{"micros":71856,"calls":["start_session",{"micros":29142,"calls":["api-prd-main-cf04",{"micros":25610,"calls":["get_user",{"micros":2696},"add_authorized_ip",{"micros":1488},"get_guilds",{"micros":3707},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":26047,"calls":[]}]}]}] (Session ID: 90db53d9175e7c75fc2b425f48b2db46).
+[2022-02-12 13:34:06,758] INFO [root.on_connect:86] bot connected
+[2022-02-12 13:34:08,770] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 13:34:08,771] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 13:34:08,785] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 13:35:00,001] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:36:00 EST)" (scheduled at 2022-02-12 13:35:00-05:00)
+[2022-02-12 13:35:00,002] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:36:00 EST)" executed successfully
+[2022-02-12 13:35:57,326] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 13:35:57,327] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 13:35:57,327] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 13:35:57,372] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 13:35:57,372] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 13:36:02,041] INFO [root.run:70] Running setup...
+[2022-02-12 13:36:02,054] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 13:36:02,054] INFO [root.setup:58] setup complete
+[2022-02-12 13:36:02,054] INFO [root.run:76] running bot....
+[2022-02-12 13:36:02,055] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 13:36:02,417] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 13:36:02,585] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-ppht",{"micros":121497,"calls":["discord-sessions-green-prd-2-150",{"micros":111129,"calls":["start_session",{"micros":84292,"calls":["api-prd-main-xhdf",{"micros":81516,"calls":["get_user",{"micros":5835},"add_authorized_ip",{"micros":10864},"get_guilds",{"micros":6423},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":11,"calls":[]},"presence_connect",{"micros":12921,"calls":[]}]}]}] (Session ID: 7cdfcafe56d16d2cd66e2369f8f526da).
+[2022-02-12 13:36:02,586] INFO [root.on_connect:86] bot connected
+[2022-02-12 13:36:04,596] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 13:36:04,597] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 13:36:04,597] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 13:37:00,007] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:38:00 EST)" (scheduled at 2022-02-12 13:37:00-05:00)
+[2022-02-12 13:37:00,304] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:38:00 EST)" executed successfully
+[2022-02-12 13:37:07,709] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 13:37:07,709] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 13:37:07,709] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 13:37:07,753] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 13:37:07,754] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 13:37:12,702] INFO [root.run:70] Running setup...
+[2022-02-12 13:37:12,724] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 13:37:12,725] INFO [root.setup:58] setup complete
+[2022-02-12 13:37:12,725] INFO [root.run:76] running bot....
+[2022-02-12 13:37:12,725] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 13:37:13,127] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 13:37:13,244] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-0c1x",{"micros":66498,"calls":["discord-sessions-green-prd-2-137",{"micros":65169,"calls":["start_session",{"micros":41142,"calls":["api-prd-main-7rfh",{"micros":36521,"calls":["get_user",{"micros":2729},"add_authorized_ip",{"micros":1235},"get_guilds",{"micros":7695},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":0,"calls":[]}]}]}] (Session ID: 7d9ba855eb0502b283a4406cc09cc53f).
+[2022-02-12 13:37:13,245] INFO [root.on_connect:86] bot connected
+[2022-02-12 13:37:15,250] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 13:37:15,250] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 13:37:15,251] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 13:38:00,012] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:39:00 EST)" (scheduled at 2022-02-12 13:38:00-05:00)
+[2022-02-12 13:38:00,013] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:39:00 EST)" executed successfully
+[2022-02-12 13:38:03,089] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 13:38:03,090] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 13:38:03,090] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 13:38:03,139] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 13:38:03,140] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 13:38:06,712] INFO [root.run:70] Running setup...
+[2022-02-12 13:38:06,735] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 13:38:06,735] INFO [root.setup:58] setup complete
+[2022-02-12 13:38:06,735] INFO [root.run:76] running bot....
+[2022-02-12 13:38:06,736] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 13:38:07,159] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 13:38:07,289] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-z7w9",{"micros":80675,"calls":["discord-sessions-green-prd-2-105",{"micros":78208,"calls":["start_session",{"micros":33260,"calls":["api-prd-main-rrlc",{"micros":29928,"calls":["get_user",{"micros":2553},"add_authorized_ip",{"micros":3438},"get_guilds",{"micros":4714},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":19428,"calls":[]}]}]}] (Session ID: 09d30c9d98130ee7a343527234237271).
+[2022-02-12 13:38:07,290] INFO [root.on_connect:86] bot connected
+[2022-02-12 13:38:09,299] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 13:38:09,299] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 13:38:09,300] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 13:39:00,009] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:40:00 EST)" (scheduled at 2022-02-12 13:39:00-05:00)
+[2022-02-12 13:39:00,010] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:40:00 EST)" executed successfully
+[2022-02-12 13:39:11,835] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 13:39:11,836] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 13:39:11,836] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 13:39:11,901] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 13:39:11,902] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 13:39:55,745] INFO [root.run:70] Running setup...
+[2022-02-12 13:39:55,766] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 13:39:55,767] INFO [root.setup:58] setup complete
+[2022-02-12 13:39:55,767] INFO [root.run:76] running bot....
+[2022-02-12 13:39:55,767] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 13:39:56,148] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 13:39:56,260] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-pdr7",{"micros":63648,"calls":["discord-sessions-green-prd-2-96",{"micros":49917,"calls":["start_session",{"micros":32525,"calls":["api-prd-main-64mf",{"micros":29140,"calls":["get_user",{"micros":2565},"add_authorized_ip",{"micros":1196},"get_guilds",{"micros":5701},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 60cebd6ec8f86ce2a3ae40594ba09109).
+[2022-02-12 13:39:56,261] INFO [root.on_connect:86] bot connected
+[2022-02-12 13:39:58,258] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 13:39:58,259] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 13:39:58,259] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 13:40:00,015] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:41:00 EST)" (scheduled at 2022-02-12 13:40:00-05:00)
+[2022-02-12 13:40:00,015] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:41:00 EST)" executed successfully
+[2022-02-12 13:41:00,004] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:42:00 EST)" (scheduled at 2022-02-12 13:41:00-05:00)
+[2022-02-12 13:41:00,005] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:42:00 EST)" executed successfully
+[2022-02-12 13:42:00,009] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:43:00 EST)" (scheduled at 2022-02-12 13:42:00-05:00)
+[2022-02-12 13:42:00,010] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:43:00 EST)" executed successfully
+[2022-02-12 13:43:00,009] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:44:00 EST)" (scheduled at 2022-02-12 13:43:00-05:00)
+[2022-02-12 13:43:00,009] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:44:00 EST)" executed successfully
+[2022-02-12 13:44:00,011] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:45:00 EST)" (scheduled at 2022-02-12 13:44:00-05:00)
+[2022-02-12 13:44:00,012] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:45:00 EST)" executed successfully
+[2022-02-12 13:45:00,003] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:46:00 EST)" (scheduled at 2022-02-12 13:45:00-05:00)
+[2022-02-12 13:45:00,004] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:46:00 EST)" executed successfully
+[2022-02-12 13:46:00,007] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:47:00 EST)" (scheduled at 2022-02-12 13:46:00-05:00)
+[2022-02-12 13:46:00,008] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:47:00 EST)" executed successfully
+[2022-02-12 13:46:55,998] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 13:46:55,998] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 13:46:55,999] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 13:46:56,043] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 13:46:56,043] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 13:47:01,232] INFO [root.run:73] Running setup...
+[2022-02-12 13:47:01,234] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 13:47:01,234] INFO [root.setup:58] setup complete
+[2022-02-12 13:47:01,235] INFO [root.run:79] running bot....
+[2022-02-12 13:47:01,235] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 13:47:01,725] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 13:47:01,841] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-ls7q",{"micros":69350,"calls":["discord-sessions-green-prd-2-8",{"micros":60293,"calls":["start_session",{"micros":41487,"calls":["api-prd-main-l59m",{"micros":27872,"calls":["get_user",{"micros":4042},"add_authorized_ip",{"micros":1511},"get_guilds",{"micros":4025},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":10524,"calls":[]}]}]}] (Session ID: 5b853b9c45b3055947e2f81d694db662).
+[2022-02-12 13:47:01,842] INFO [root.on_connect:89] bot connected
+[2022-02-12 13:47:03,857] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 13:47:03,857] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 13:47:03,858] ERROR [asyncio.default_exception_handler:1729] Task exception was never retrieved
+future: <Task finished name='disnake: on_ready' coro=<Client._run_event() done, defined at C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py:513> exception=OperationalError('near "INGORE": syntax error')>
+Traceback (most recent call last):
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 526, in _run_event
+    await self.on_error(event_name, *args, **kwargs)
+  File "C:\Users\jmart\AppData\Local\Programs\Python\Python310\lib\site-packages\disnake\client.py", line 521, in _run_event
+    await coro(*args, **kwargs)
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 130, in on_ready
+    self.update_db()
+  File "e:\Github\AutoBan\lib\bot\__init__.py", line 67, in update_db
+    db.execute('INSERT OR INGORE INTO names (dName) VALUES (?)',
+  File "e:\Github\AutoBan\lib\db\db.py", line 65, in execute
+    cur.execute(command, tuple(values))
+sqlite3.OperationalError: near "INGORE": syntax error
+[2022-02-12 13:47:03,860] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 13:47:14,413] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 13:47:14,413] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 13:47:14,413] INFO [disnake.client._cancel_tasks:113] Cleaning up after 1 tasks.
+[2022-02-12 13:47:14,463] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 13:47:14,464] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 13:47:17,899] INFO [root.run:73] Running setup...
+[2022-02-12 13:47:17,900] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 13:47:17,901] INFO [root.setup:58] setup complete
+[2022-02-12 13:47:17,901] INFO [root.run:79] running bot....
+[2022-02-12 13:47:17,901] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 13:47:18,284] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 13:47:18,393] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-1nq9",{"micros":63389,"calls":["discord-sessions-green-prd-2-37",{"micros":59173,"calls":["start_session",{"micros":45692,"calls":["api-prd-main-xhdf",{"micros":39136,"calls":["get_user",{"micros":6431},"add_authorized_ip",{"micros":2120},"get_guilds",{"micros":6199},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":6014,"calls":[]}]}]}] (Session ID: 39bee42ac521de9a8214bddc1f4a1b06).
+[2022-02-12 13:47:18,394] INFO [root.on_connect:89] bot connected
+[2022-02-12 13:47:20,419] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 13:47:20,419] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 13:47:20,434] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 13:48:00,012] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:49:00 EST)" (scheduled at 2022-02-12 13:48:00-05:00)
+[2022-02-12 13:48:00,013] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:49:00 EST)" executed successfully
+[2022-02-12 13:48:49,017] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 13:48:49,018] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 13:48:49,018] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 13:48:49,068] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 13:48:49,069] INFO [disnake.client._cleanup_loop:138] Closing the event loop.
+[2022-02-12 13:48:54,910] INFO [root.run:73] Running setup...
+[2022-02-12 13:48:54,932] INFO [root.setup:56] autoban cog loaded
+[2022-02-12 13:48:54,932] INFO [root.setup:58] setup complete
+[2022-02-12 13:48:54,932] INFO [root.run:79] running bot....
+[2022-02-12 13:48:54,932] INFO [disnake.client.login:648] logging in using static token
+[2022-02-12 13:48:55,312] INFO [disnake.gateway.identify:528] Shard ID None has sent the IDENTIFY payload.
+[2022-02-12 13:48:55,421] INFO [disnake.gateway.received_message:623] Shard ID None has connected to Gateway: ["gateway-prd-main-s7rp",{"micros":57840,"calls":["discord-sessions-green-prd-2-24",{"micros":52234,"calls":["start_session",{"micros":34522,"calls":["api-prd-main-gw8d",{"micros":25951,"calls":["get_user",{"micros":3766},"add_authorized_ip",{"micros":1650},"get_guilds",{"micros":3190},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":0,"calls":[]}]}]}] (Session ID: d6fa91d6d6d752596423b3890a911c33).
+[2022-02-12 13:48:55,423] INFO [root.on_connect:89] bot connected
+[2022-02-12 13:48:57,431] INFO [apscheduler.scheduler._real_add_job:886] Added job "commit" to job store "default"
+[2022-02-12 13:48:57,431] INFO [apscheduler.scheduler.start:171] Scheduler started
+[2022-02-12 13:48:57,446] INFO [root.ready_up:32] AutoBan cog ready
+[2022-02-12 13:49:00,010] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:50:00 EST)" (scheduled at 2022-02-12 13:49:00-05:00)
+[2022-02-12 13:49:00,011] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:50:00 EST)" executed successfully
+[2022-02-12 13:50:00,001] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:51:00 EST)" (scheduled at 2022-02-12 13:50:00-05:00)
+[2022-02-12 13:50:00,002] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:51:00 EST)" executed successfully
+[2022-02-12 13:51:00,006] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:52:00 EST)" (scheduled at 2022-02-12 13:51:00-05:00)
+[2022-02-12 13:51:00,007] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:52:00 EST)" executed successfully
+[2022-02-12 13:52:00,012] INFO [apscheduler.executors.default.run_job:123] Running job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:53:00 EST)" (scheduled at 2022-02-12 13:52:00-05:00)
+[2022-02-12 13:52:00,013] INFO [apscheduler.executors.default.run_job:144] Job "commit (trigger: cron[second='0'], next run at: 2022-02-12 13:53:00 EST)" executed successfully
+[2022-02-12 13:52:02,695] INFO [disnake.client.run:841] Received signal to terminate bot and event loop.
+[2022-02-12 13:52:02,696] INFO [disnake.client.run:844] Cleaning up tasks.
+[2022-02-12 13:52:02,696] INFO [disnake.client._cancel_tasks:113] Cleaning up after 2 tasks.
+[2022-02-12 13:52:02,743] INFO [disnake.client._cancel_tasks:118] All tasks finished cancelling.
+[2022-02-12 13:52:02,744] INFO [disnake.client._cleanup_loop:138] Closing the event loop.

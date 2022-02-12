@@ -1,13 +1,11 @@
 from asyncio import sleep
-from datetime import datetime
 from pathlib import Path
-from glob import glob
 
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from disnake import Embed, Intents
 from disnake.errors import Forbidden
 from disnake.ext import commands
-from disnake.ext.commands import Bot as Jay
+from disnake.ext.commands import Bot as AutoBan
 from disnake.ext.commands import CommandNotFound, BadArgument, MissingRequiredArgument
 from disnake.ext.commands.bot import when_mentioned_or
 from disnake.ext.commands.errors import CommandOnCooldown, MissingPermissions
@@ -37,7 +35,7 @@ class Ready(object):
         return all([getattr(self, cog) for cog in cogs])
 
 
-class Bot(Jay):
+class Bot(AutoBan):
     def __init__(self):
         self.PREFIX = PREFIX
         self.cogs_ready = Ready()
@@ -60,9 +58,14 @@ class Bot(Jay):
         logging.info('setup complete')
 
     def update_db(self):
-        db.multiexec('INSERT OR IGNORE INTO users (UserUD) VALUES (?)',
-                     ((member.id,) for member in self.guild.members if not member.bot))
+        db.multiexec('INSERT OR IGNORE INTO users (UserID) VALUES (?)',
+                    ((member.id,) for member in self.guild.members if not member.bot))
 
+        db.multiexec('UPDATE users SET GuildID = ?',
+                    ((member.guild.id,) for member in self.guild.members if not member.bot))
+        
+        db.execute('INSERT OR IGNORE INTO names (dName) VALUES (?)',
+                    'nuke')
         db.commit()
 
     def run(self, version):

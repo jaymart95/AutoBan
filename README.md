@@ -29,7 +29,6 @@ python launcher.py
 ```
 /abl - add an ID to the blacklist
 /rbl - remove an ID from the blacklist
-/unban - unban a user by their ID *currently not working.
 ```
 ### Todo
 * Auto add IDs once member joins discord

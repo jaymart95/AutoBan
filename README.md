@@ -10,9 +10,9 @@ A discord bot that autobans blacklisted users. This bot uses a json file to read
 
 ### Dependencies
 
-disnake @ git+https://github.com/DisnakeDev/disnake@d6341caa8836239bc672cab7f87254a0ee027e00
-python-3.9.9
-APScheduler==3.8.1
+* disnake @ git+https://github.com/DisnakeDev/disnake@d6341caa8836239bc672cab7f87254a0ee027e00
+* python-3.9.9
+* APScheduler==3.8.1
 
 ### Installing
 

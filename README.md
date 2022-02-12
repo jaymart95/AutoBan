@@ -1,6 +1,4 @@
-# AutoMod
-
-Simple overview of use/purpose.
+# AutoBan
 
 ## Description
 

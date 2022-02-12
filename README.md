@@ -17,7 +17,6 @@ A discord bot that autobans blacklisted users. This bot uses a json file to read
 ### Installing
 
 * Make sure to go through and add your log channel id inside of the autoban.py file, add your discord token to the token.0 file and then add your guild id inside of the autoban.py file and the __init__.py file inside of the bot folder.
-* Any modifications needed to be made to files/folders
 
 ### Executing program
 

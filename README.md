@@ -1,6 +1,6 @@
 # AutoBan
 
-A discord bot that autobans blacklisted users.
+A discord bot that autobans blacklisted users by ID and Names
 
 ## Getting Started
 

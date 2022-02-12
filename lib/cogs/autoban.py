@@ -61,15 +61,14 @@ class AutoBan(Cog):
 
     @Cog.listener()
     async def on_member_join(self, member):
-        with open("./data/blacklist.json", "r") as json_file:
-            json_dict = json.load(json_file)
-            if [member.id == i for i in json_dict]:
-                await member.ban(reason="Blacklisted Member")
-                embed = disnake.Embed(title='Member banned', description='Blacklisted member')
-                embed.add_field(name='Member', value=member.mention, inline=False)
-                embed.set_thumbnail(url=member.avatar.url)
-                embed.set_footer(text="Member ID: {}".format(member.id))
-                await self.log_channel.send(embed=embed)
+        _check = db.record("SELECT is_blacklisted FROM users WHERE UserID = ?", member)
+        if int(1) in _check:
+            await member.ban(reason="Blacklisted Member")
+            embed = disnake.Embed(title='Member banned', description='Blacklisted member')
+            embed.add_field(name='Member', value=member.mention, inline=False)
+            embed.set_thumbnail(url=member.avatar.url)
+            embed.set_footer(text="Member ID: {}".format(member.id))
+            await self.log_channel.send(embed=embed)
 
             
 

@@ -12,8 +12,7 @@ from lib.db import db
 import json
 
 ##Change ID to your Guild ID##
-guild_ids=[GUILD ID]
-configData = open("./config.json", "r", encoding="utf-8")
+guild_ids=[938542872700018688]
 
 class AutoBan(Cog):
     def __init__(self, bot):
@@ -24,47 +23,39 @@ class AutoBan(Cog):
         if not self.bot.ready:
             self.bot.cogs_ready.ready_up('AutoBan')
             ##Change ID to your own log channel##
-            self.log_channel = self.bot.get_channel(CHANNEL ID)
+            self.log_channel = self.bot.get_channel(939916860294561873)
 
     @slash_command(name='abl', guild_ids=guild_ids)
     @has_permissions(manage_guild=True)
-    async def blacklist(self, inter, memberid):
-        """Add a members id to the blacklist"""
-        with open("./data/blacklist.json", "r+", encoding="utf-8") as f:
-            data = json.load(f)
-            if memberid in data:
-                await inter.send("Member ID already added!", ephemeral=True)
+    async def blacklist(self, inter, memberid = None, name = None):
+        if memberid is not None:
+            _check = db.record("SELECT is_blacklisted FROM users WHERE UserID = ?", memberid)
+            if int(1) in _check:
+                await inter.send('Member ID already blacklisted!', ephemeral=True)
                 return
-            data.append(memberid)
-            f.seek(0)
-            json.dump(data, f)
-            f.truncate()
+            db.execute("UPDATE users SET is_blacklisted = ? WHERE UserID = ?", True, memberid)
             await inter.send("Member ID added!", ephemeral=True)
+            return
+        if name is not None:
+            _check = db.record("SELECT dName FROM names")
+            if name in _check:
+                await inter.send('Member name already blacklisted!', ephemeral=True)
+                return
+            db.execute("INSERT OR IGNORE INTO names (dName) VALUES (?)", name)
+            await inter.send("Member name blacklisted!", ephemeral=True)
+        db.commit()
+
 
     @slash_command(name='rbl', guild_ids=guild_ids)
     @has_permissions(manage_guild=True)
     async def remove_blacklist(self, inter, memberid):
         """Remove a members id from the blacklist"""
-        with open("./data/blacklist.json", "r+", encoding="utf-8") as f:
-            data = json.load(f)
-            if memberid not in data:
-                await inter.send("Member ID not found!", ephemeral=True)
-                return
-            data.remove(memberid)
-            f.seek(0)
-            json.dump(data, f)
-            f.truncate()
-            await inter.send("Member ID removed!", ephemeral=True)
-
-    #Currently working on a fix.
-    @slash_command(guild_ids=guild_ids)
-    @has_permissions(manage_guild=True)
-    async def unban(self, inter, memberid: int):
-        """Unban a member by their ID"""
-        member = disnake.Object(memberid)
-        #user = await self.bot.fetch_user(member)
-        await inter.guild.unban(member)
-        await inter.send("Member unbanned!", ephemeral=True)
+        _check = db.record("SELECT is_blacklisted FROM users WHERE UserID = ?", memberid)
+        if int(0) in _check:
+            await inter.send('Member ID not blacklisted!', ephemeral=True)
+            return
+        db.execute("UPDATE users SET is_blacklisted = ? WHERE UserID = ?", False, memberid)
+        await inter.send("Member ID removed!", ephemeral=True)
 
 
 
@@ -78,7 +69,7 @@ class AutoBan(Cog):
                 embed.add_field(name='Member', value=member.mention, inline=False)
                 embed.set_thumbnail(url=member.avatar.url)
                 embed.set_footer(text="Member ID: {}".format(member.id))
-                await configData["LOG_CHANNEL"].send(embed=embed)
+                await self.log_channel.send(embed=embed)
 
             
 

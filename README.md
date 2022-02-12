@@ -4,7 +4,7 @@ Simple overview of use/purpose.
 
 ## Description
 
-A discord bot that autobans blacklisted users. This bot uses a json file to read discord IDs from and bans users based on those IDs. 
+A discord bot that autobans blacklisted users.
 
 ## Getting Started
 
@@ -31,12 +31,12 @@ python launcher.py
 /rbl - remove an ID from the blacklist
 ```
 ### Todo
-* Auto add IDs once member joins discord
-* Convert list to a database
-* Add name blacklist
+* Add unban feature by using discord ID
 
 ## Version History
-
+* 0.2
+   * Converted to SQLite DB instead of .json file. 
+   * Added ability to blacklist names
 * 0.1
     * Initial Release
 

@@ -25,14 +25,15 @@ python launcher.py
 ```
 /abl - add an ID to the blacklist
 /rbl - remove an ID from the blacklist
+/unban - unban member by their ID
 ```
 ### Todo
-* Add unban feature by using discord ID
 
 ## Version History
 * 0.2
    * Converted to SQLite DB instead of .json file. 
    * Added ability to blacklist names
+   * Added unban by ID command
 * 0.1
     * Initial Release
 

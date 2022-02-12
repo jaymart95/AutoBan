@@ -26,6 +26,9 @@ Open cmd prompt and navigate to where the bot folder is store then run this comm
 python launcher.py
 ```
 
+### Bot Commands
+
+
 ## Version History
 
 * 0.1

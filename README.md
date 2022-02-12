@@ -4,7 +4,7 @@ Simple overview of use/purpose.
 
 ## Description
 
-A discord bot that autobans blacklisted users. This bot uses a json file to read discord IDs from and bans users based on those IDs. 
+A discord bot that autobans blacklisted users.
 
 ## Getting Started
 

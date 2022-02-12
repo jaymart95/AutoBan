@@ -33,7 +33,7 @@ python launcher.py
 /unban - unban a user by their ID *currently not working.
 ```
 ###WIP - Work in progress
-Currently converting the list to a database and also adding the ability to add names rather than just IDs to blacklist.
+* Currently converting the list to a database and also adding the ability to add names rather than just IDs to blacklist.
 
 
 ## Version History
